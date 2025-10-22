@@ -10,7 +10,7 @@ on:
       - valaxy
 
 permissions:
-  pages: write
+  contents: write
 
 jobs:
   build:
