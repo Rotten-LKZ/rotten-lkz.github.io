@@ -30,7 +30,7 @@ declare module 'vue-router/auto-routes' {
     '/page/[page]': RouteRecordInfo<'/page/[page]', '/page/:page', { page: ParamValue<true> }, { page: ParamValue<false> }>,
     '/posts/': RouteRecordInfo<'/posts/', '/posts', Record<never, never>, Record<never, never>>,
     '/posts/hello-valaxy': RouteRecordInfo<'/posts/hello-valaxy', '/posts/hello-valaxy', Record<never, never>, Record<never, never>>,
-    '/posts/wp-Logi靶机': RouteRecordInfo<'/posts/wp-Logi靶机', '/posts/wp-Logi靶机', Record<never, never>, Record<never, never>>,
+    '/posts/wp-Logi/wp-Logi靶机': RouteRecordInfo<'/posts/wp-Logi/wp-Logi靶机', '/posts/wp-Logi/wp-Logi靶机', Record<never, never>, Record<never, never>>,
     '/tags/': RouteRecordInfo<'/tags/', '/tags', Record<never, never>, Record<never, never>>,
   }
 
@@ -93,8 +93,8 @@ declare module 'vue-router/auto-routes' {
       routes: '/posts/hello-valaxy'
       views: never
     }
-    'pages/posts/wp-Logi靶机.md': {
-      routes: '/posts/wp-Logi靶机'
+    'pages/posts/wp-Logi/wp-Logi靶机.md': {
+      routes: '/posts/wp-Logi/wp-Logi靶机'
       views: never
     }
     'pages/tags/index.md': {

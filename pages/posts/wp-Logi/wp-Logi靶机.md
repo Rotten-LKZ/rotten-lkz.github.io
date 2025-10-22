@@ -82,13 +82,13 @@ Finished
 
 #### 用 curl 查看主页内容
 
-![image-20250930115659409](/images/note/image-20250930115659409.png)
+![image-20250930115659409](./image-20250930115659409.png)
 
 疑似遗留账号
 
 #### curl 查看/admin 内容
 
-![image-20250930120121037](/images/note/image-20250930120121037.png)
+![image-20250930120121037](./image-20250930120121037.png)
 
 也就是说这里要用 token 提交，我们看到的登录框是错误的
 
@@ -98,7 +98,7 @@ Finished
 
 #### 主页发现可能有用的信息
 
-![image-20250930120301568](/images/note/image-20250930120301568.png)
+![image-20250930120301568](./image-20250930120301568.png)
 
 提示很明显，得到字符串：nevergiveup
 
@@ -106,7 +106,7 @@ Finished
 
 登陆上之后页面无有用信息，F12 查看网络刷新拿到 token
 
-![image-20250930120456522](/images/note/image-20250930120456522.png)
+![image-20250930120456522](./image-20250930120456522.png)
 
 #### JWT 解码
 
@@ -114,19 +114,19 @@ Finished
 
 去尝试解码（https://jwt.p2hp.com/），验证签名大概率是之前得到的字符串 nevergiveup，然后 role 改成 admin
 
-![image-20250930120737861](/images/note/image-20250930120737861.png)
+![image-20250930120737861](./image-20250930120737861.png)
 
 #### 利用 token 登录 admin 页面
 
 yakit/bp 抓包，这里不作演示
 
-![image-20250930120903746](/images/note/image-20250930120903746.png)
+![image-20250930120903746](./image-20250930120903746.png)
 
 #### Web Fuzz 测试
 
 访问 karsakarsa369.php，页面显示 fuzz，猜测参数“cmd、commond、sys、system”等，这里测试后参数为 cmd
 
-![image-20250930121120535](/images/note/image-20250930121120535.png)
+![image-20250930121120535](./image-20250930121120535.png)
 
 用 exec()函数反向连接，在 Kali 上监听端口
 
@@ -181,13 +181,13 @@ User ame may run the following commands on logi:
 
 wall 文件利用（[wall | GTFOBins](https://gtfobins.github.io/gtfobins/wall/)）
 
-![image-20250930122828452](/images/note/image-20250930122828452.png)
+![image-20250930122828452](./image-20250930122828452.png)
 
 尝试用这个方法去读 root.txt，发现读不到，那就试一下读 ssh 文件（/root/.ssh/id_rsa）
 
 先用自己的 ssh 工具登录 ame 用户
 
-![image-20250930123517323](/images/note/image-20250930123517323.png)
+![image-20250930123517323](./image-20250930123517323.png)
 
 然后用 Kali 连接靶机 root 用户登录
 
