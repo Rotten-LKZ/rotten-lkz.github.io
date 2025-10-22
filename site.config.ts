@@ -1,7 +1,7 @@
 import { defineSiteConfig } from 'valaxy'
 
 export default defineSiteConfig({
-  url: '',  //你网站的URL
+  url: 'https://scuanliecyepuhic.github.io/SegFault',  //你网站的URL
   favicon: "/images/favicon.png",	// 网页图标链接
   lang: 'zh-CN',  //默认语言
   title: "ᖰ⌯'▾'⌯ᖳ~~♥",  //网站标题
