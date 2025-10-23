@@ -1,10 +1,5 @@
 import type { UserThemeConfig } from 'valaxy-theme-yun'
 import { defineValaxyConfig } from 'valaxy'
-// import { addonTwikoo } from 'valaxy-addon-twikoo'  //添加Twikoo评论系统
-
-// 安装对应的插件，详情请查看Valaxy开发文档
-// import { addonMeting } from 'valaxy-addon-meting'  //添加Meting音乐播放器
-// add icons what you will need
 
 const safelist = [
   'i-ri-home-line',
@@ -65,8 +60,8 @@ export default defineValaxyConfig<UserThemeConfig>({
     //背景图,这里为我自己添加的字段
     bg_image: {
       enable: true,  //这里是背景图的设置，你可以设置白日模式和夜间模式的背景图，如果你不需要背景图，可以将上面的enable改为false即可
-      url: "/images/back_light.png",	// 白日模式背景
-      dark: "/images/back_dark.png",	// 夜间模式背景
+      url: "/SegFault/images/back_light.png",	// 白日模式背景
+      dark: "/SegFault/images/back_dark.png",	// 夜间模式背景
     },
 
      //鼠标点击烟花特效
@@ -78,30 +73,13 @@ export default defineValaxyConfig<UserThemeConfig>({
   },
   unocss: { safelist },
   siteConfig: {
-    url: 'https://scuanliecyepuhic.github.io/SegFault',
+    url: 'https://scuanliecyepuhic.github.io/SegFault/',
     // 启用评论
     comment: {
       enable: false  // 评论设置
     },
   },
   vite: {
-    base: './'
+    base: '/SegFault/'
   }
-    // addons: [
-    //   addonTwikoo({ }),
-    // ]
-  // 设置 valaxy-addon-meting 配置项
-  // addons: [
-  //   //音乐播放器，如需要配置，请查看https://github.com/metowolf/MetingJS
-  //   addonMeting({
-  //     global: true,
-  //     /** @see https://github.com/metowolf/MetingJS */
-  //     props: {
-  //       id: '',
-  //       server: '',
-  //       type: '',
-  //       mode: '',
-  //     },
-  //   })
-  // ],
 })
