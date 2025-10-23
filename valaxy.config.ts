@@ -60,8 +60,8 @@ export default defineValaxyConfig<UserThemeConfig>({
     //背景图,这里为我自己添加的字段
     bg_image: {
       enable: true,  //这里是背景图的设置，你可以设置白日模式和夜间模式的背景图，如果你不需要背景图，可以将上面的enable改为false即可
-      url: "/SegFault/images/back_light.png",	// 白日模式背景
-      dark: "/SegFault/images/back_dark.png",	// 夜间模式背景
+      url: "/images/back_light.png",	// 白日模式背景
+      dark: "/images/back_dark.png",	// 夜间模式背景
     },
 
      //鼠标点击烟花特效
@@ -73,7 +73,7 @@ export default defineValaxyConfig<UserThemeConfig>({
   },
   unocss: { safelist },
   siteConfig: {
-    url: 'https://scuanliecyepuhic.github.io/SegFault/',
+    url: 'https://scuanliecyepuhic.github.io',
     // 启用评论
     comment: {
       enable: false  // 评论设置
@@ -83,6 +83,6 @@ export default defineValaxyConfig<UserThemeConfig>({
     ssgOptions: {
       dirStyle: 'nested',
     },
-    base: '/SegFault/'
+    base: '/./'
   },
 })

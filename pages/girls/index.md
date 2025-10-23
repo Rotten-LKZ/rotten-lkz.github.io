@@ -1,7 +1,7 @@
 ---
 title: ♥~私を一番愛してくれるこれらの人たち~♥
 random: true
-links: /SegFault/page/girls.json
+links: /page/girls.json
 nav: false # 隐藏导航栏
 comment: false # 隐藏评论
 toc: false # 隐藏目录

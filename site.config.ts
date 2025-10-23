@@ -1,14 +1,14 @@
 import { defineSiteConfig } from 'valaxy'
 
 export default defineSiteConfig({
-  url: 'https://scuanliecyepuhic.github.io/SegFault/',  //你网站的URL
-  favicon: "/SegFault/images/favicon.png",	// 网页图标链接
+  url: 'https://scuanliecyepuhic.github.io',  //你网站的URL
+  favicon: "/images/favicon.png",	// 网页图标链接
   lang: 'zh-CN',  //默认语言
   title: "ᖰ⌯'▾'⌯ᖳ~~♥",  //网站标题
   subtitle: 'Try to be better.',//网站副标题
   author: {
     name: '咲之花',//博主名称
-    avatar: "/SegFault/images/avatar.png",	//头像链接
+    avatar: "/images/avatar.png",	//头像链接
     status: {
       emoji: '😉'	// 头像旁边的emoji
     },
@@ -16,7 +16,7 @@ export default defineSiteConfig({
   description: '梦想成为pwn糕手的半二次元人 .',  //简介
   social: [
     {name: 'RSS',
-      link: '/SegFault/atom.xml',
+      link: '/atom.xml',
       icon: 'i-ri-rss-line',
       color: 'orange',
     },
@@ -42,7 +42,7 @@ export default defineSiteConfig({
     /**
      * 设置搜索的文件路径
      */
-    pattern: 'pages/posts/**/*.md',
+    pattern: '/posts/**/*.md',
     options: {
       keys: ['title', 'tags', 'categories', 'excerpt'],
       /**
