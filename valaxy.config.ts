@@ -80,6 +80,9 @@ export default defineValaxyConfig<UserThemeConfig>({
     },
   },
   vite: {
+    ssgOptions: {
+      dirStyle: 'nested',
+    },
     base: '/SegFault/'
-  }
+  },
 })
