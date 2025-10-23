@@ -16,7 +16,7 @@ export default defineSiteConfig({
   description: '梦想成为pwn糕手的半二次元人 .',  //简介
   social: [
     {name: 'RSS',
-      link: '/atom.xml',  //这个是博客自带的RSS订阅，尽量留着，方便其他博友为你订阅
+      link: '/SegFault/atom.xml',
       icon: 'i-ri-rss-line',
       color: 'orange',
     },
@@ -52,4 +52,23 @@ export default defineSiteConfig({
         },
       },
     },
+
+  sponsor: {
+    enable: false,
+    title: '我很可爱，请给我钱！',
+    methods: [
+      {
+        name: '支付宝',
+        url: '', //这里填写你的支付宝收款码图片链接
+        color: '#00A3EE',
+        icon: 'i-ri-alipay-line',
+      },
+      {
+        name: '微信支付',
+        url: '',//这里填写你的微信收款码图片链接
+        color: '#2DC100',
+        icon: 'i-ri-wechat-pay-line',
+      },
+    ],
+  },
 })
