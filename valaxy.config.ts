@@ -79,11 +79,15 @@ export default defineValaxyConfig<UserThemeConfig>({
   },
   unocss: { safelist },
   siteConfig: {
+    url: 'https://scuanliecyepuhic.github.io/SegFault',
     // 启用评论
     comment: {
       enable: false  // 评论设置
     },
   },
+  vite: {
+    base: '/SegFault/'
+  }
     // addons: [
     //   addonTwikoo({ }),
     // ]
