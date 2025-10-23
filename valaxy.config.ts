@@ -83,6 +83,6 @@ export default defineValaxyConfig<UserThemeConfig>({
     ssgOptions: {
       dirStyle: 'nested',
     },
-    base: '/./'
+    base: './'
   },
 })
