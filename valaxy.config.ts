@@ -15,7 +15,6 @@ const safelist = [
  */
 export default defineValaxyConfig<UserThemeConfig>({
   // site config see site.config.ts
-
   theme: 'yun',
 
   themeConfig: {
@@ -86,7 +85,7 @@ export default defineValaxyConfig<UserThemeConfig>({
     },
   },
   vite: {
-    base: '/SegFault/'
+    base: './'
   }
     // addons: [
     //   addonTwikoo({ }),
