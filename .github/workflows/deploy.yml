@@ -39,6 +39,7 @@ jobs:
         run: |
           echo "Starting SCP deployment..."
           scp -r \
+            -vvv \
             -P ${{ secrets.SFTP_PORT }} \
             -o StrictHostKeyChecking=no \
             ./dist/* \
