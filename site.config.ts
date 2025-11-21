@@ -60,21 +60,21 @@ export default defineSiteConfig({
       ignoreLocation: true,
     },
   },
-    comment: {
-      enable: true
-    },
-    statistics: {
-      enable: true,
-      readTime: {
-        /**
-         * 阅读速度
-         */
-        speed: {
-          cn: 300,
-          en: 200,
-        },
+  comment: {
+    enable: true
+  },
+  statistics: {
+    enable: true,
+    readTime: {
+      /**
+       * 阅读速度
+       */
+      speed: {
+        cn: 300,
+        en: 200,
       },
     },
+  },
 
   sponsor: {
     enable: false,
