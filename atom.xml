@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://scuanliecyepuhic.github.io/</id>
+    <title>ᖰ⌯'▾'⌯ᖳ~~♥</title>
+    <updated>2025-12-03T07:59:18.338Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <author>
+        <name>咲之花</name>
+        <email>i@valaxy.site</email>
+        <uri>https://valaxy.site</uri>
+    </author>
+    <link rel="alternate" href="https://scuanliecyepuhic.github.io/"/>
+    <link rel="self" href="https://scuanliecyepuhic.github.io/atom.xml"/>
+    <subtitle>梦想成为pwn糕手的半二次元人 .</subtitle>
+    <logo>https://scuanliecyepuhic.github.io/images/avatar.png</logo>
+    <icon>https://scuanliecyepuhic.github.io/favicon.svg</icon>
+    <rights>CC BY-NC-SA 4.0 2025 © 咲之花</rights>
+</feed>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>ᖰ⌯'▾'⌯ᖳ~~♥</title>
+        <link>https://scuanliecyepuhic.github.io/</link>
+        <description>梦想成为pwn糕手的半二次元人 .</description>
+        <lastBuildDate>Wed, 03 Dec 2025 07:59:18 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <image>
+            <title>ᖰ⌯'▾'⌯ᖳ~~♥</title>
+            <url>https://scuanliecyepuhic.github.io/images/avatar.png</url>
+            <link>https://scuanliecyepuhic.github.io/</link>
+        </image>
+        <copyright>CC BY-NC-SA 4.0 2025 © 咲之花</copyright>
+        <atom:link href="https://scuanliecyepuhic.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    </channel>
+</rss>
