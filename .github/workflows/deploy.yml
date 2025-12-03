@@ -39,5 +39,5 @@ jobs:
           local_path: './dist/*'
           remote_path: ${{ secrets.SFTP_SERVER_DIR }}
           sftpArgs: '-o ConnectTimeout=5'
-          delete_remote: true
+          delete_remote_files: true
           sftp_only: true
