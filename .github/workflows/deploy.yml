@@ -29,19 +29,15 @@ jobs:
       - name: Build Valaxy Blog
         run: npm run build
       
-      - name: Start SSH Agent and Load Private Key
-        uses: webfactory/ssh-agent@v0.9.1
+      - name: Deploy to Server
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.6
         with:
-          ssh-private-key: ${{ secrets.SFTP_PRIVATE_KEY }}
-          known-hosts-file: /dev/null
-        
-      - name: Deploy files via SCP
-        run: |
-          echo "Starting SCP deployment..."
-          scp -r \
-            -vvv \
-            -P ${{ secrets.SFTP_PORT }} \
-            -o StrictHostKeyChecking=no \
-            ./dist/* \
-            ${{ secrets.SFTP_USERNAME }}@${{ secrets.SFTP_SERVER }}:${{ secrets.SFTP_SERVER_DIR }}
-          echo "SCP deployment completed."
+          username: ${{ secrets.SFTP_USERNAME }}
+          server: ${{ secrets.SFTP_SERVER }}
+          port: ${{ secrets.SFTP_PORT }}
+          ssh_private_key: ${{ secrets.SFTP_PRIVATE_KEY }}
+          local_path: './dist/*'
+          remote_path: ${{ secrets.SFTP_SERVER_DIR }}
+          sftpArgs: '-o ConnectTimeout=5'
+          delete_remote: true
+          sftp_only: true
